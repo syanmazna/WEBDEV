@@ -6,31 +6,75 @@ h1, h2, h3, h4, p, br {
 	color: rgb(20, 145, 255);
 }
 
-.img{
-	align-items: flex-end;
-}
-
 #first-section{
 	position: relative;
+	top:0%;
 }
 
 #profile-box{
-	position: sticky;
+	position:relative;
 	top: 0px;
 }
 
+.profile-img{
+	position:static;
+	align-content: right;
+	top: 20px;
+	right: 20px;
+	width: 200px;
+	height: 200px;
+	display: grid;	
+	grid-column: 2;
+	
+}
+
 .section-grid {
+	position: relative;
 	background-color: #d5ecfb; /* untuk mengubah warna background dari suatu element */
 	color: #fff; /* untuk mengubah warna text dari suatu element */
 	text-align: center;
-	align-content: left;
+	align-content:flex-start;
 	width: 50vw;
 	height: 50vh;
 	margin: 50px auto;
 	padding: 20px;
 	border: 5px dotted;
 	padding: 9%;
+	display: grid;
+	
+	
+
 }
 
-
+.section{
+	background-color: #d5ecfb; /* untuk mengubah warna background dari suatu element */
+	color: #fff; /* untuk mengubah warna text dari suatu element */
+	text-align: center;
+	align-content:space-evenly;
+	width: 50vw;
+	height: 50vh;
+	margin: 50px auto;
+	padding: 20px;
+	border: 5px dotted;
+	padding: 9%;
+	/*flex-shrink: 5;*/
 	
+}
+
+@media  (max-width: 700px) {
+	.profile-img{
+		align-content: right;
+		text-align: right;
+		position: sticky;
+		width: 100px;
+	    height: 100px;
+	}
+	
+}
+
+@media  (min-width: 600px) {
+	.section-grid{
+		font-size: larger;
+	}
+	
+}
