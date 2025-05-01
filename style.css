@@ -1,5 +1,8 @@
 body{
-	background-color: rgb(132, 196, 255);
+	/*background-color: rgb(132, 196, 255);*/
+	background-image: linear-gradient(to top, #ffffff, #efeffe, #dbe0fe, #c2d2ff, #a3c5ff, #91bcff, #7eb2ff, #69a9ff, #709eff, #8290ff, #9a7fff, #b569ff);
+	display: flex;
+	gap: 20px;
 }
 
 h1, h2, h3, h4, p, br {
@@ -28,38 +31,29 @@ h1, h2, h3, h4, p, br {
 	
 }
 
-.section-grid {
+.container{
+	display: flex;
+}
+
+.section-grid, .section {
 	position: relative;
-	background-color: #d5ecfb; /* untuk mengubah warna background dari suatu element */
+	background-color: #e6f5ff; /* untuk mengubah warna background dari suatu element */
 	color: #fff; /* untuk mengubah warna text dari suatu element */
 	text-align: center;
 	align-content:flex-start;
 	width: 50vw;
 	height: 50vh;
-	margin: 50px auto;
+	margin: auto;
 	padding: 20px;
-	border: 5px dotted;
-	padding: 9%;
+	height: auto;
+	padding: 10%;
 	display: grid;
-	
-	
+	flex: 1;
+	box-sizing: border-box;
 
 }
 
-.section{
-	background-color: #d5ecfb; /* untuk mengubah warna background dari suatu element */
-	color: #fff; /* untuk mengubah warna text dari suatu element */
-	text-align: center;
-	align-content:space-evenly;
-	width: 50vw;
-	height: 50vh;
-	margin: 50px auto;
-	padding: 20px;
-	border: 5px dotted;
-	padding: 9%;
-	/*flex-shrink: 5;*/
-	
-}
+
 
 @media  (max-width: 700px) {
 	.profile-img{
@@ -77,4 +71,10 @@ h1, h2, h3, h4, p, br {
 		font-size: larger;
 	}
 	
+}
+
+@media (max-width: 768px) {
+	.body {
+	  flex-direction: column;
+	}
 }
