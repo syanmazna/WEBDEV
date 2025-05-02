@@ -2,10 +2,14 @@ body{
 	/*background-color: rgb(132, 196, 255);*/
 	background-image: linear-gradient(to top, #ffffff, #efeffe, #dbe0fe, #c2d2ff, #a3c5ff, #91bcff, #7eb2ff, #69a9ff, #709eff, #8290ff, #9a7fff, #b569ff);
 	display: flex;
-	gap: 20px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 40px;
+	padding: 6%;
+	box-sizing: border-box;
 }
 
-h1, h2, h3, h4, p, br {
+h1, h2, h3, h4, p, br, a, li {
 	color: rgb(20, 145, 255);
 }
 
@@ -44,15 +48,68 @@ h1, h2, h3, h4, p, br {
 	width: 50vw;
 	height: 50vh;
 	margin: auto;
-	padding: 20px;
+	
 	height: auto;
 	padding: 10%;
 	display: grid;
 	flex: 1;
 	box-sizing: border-box;
+	border-radius: 10%;
 
 }
 
+.insta {
+	position: relative;
+	background-color: #e6f5ff;
+	width: 60px;
+	height: 60px;
+	align-items: center;
+	margin-top: 20px;
+	font-family:Cochin;
+	border-radius: 50%;
+	display: grid;
+	align-items: center;
+	gap: 10px;
+}
+
+.linke {
+	position: relative;
+	background-color: #e6f5ff;
+	width: 60px;
+	height: 60px;
+	align-items: center;
+	margin-top: 20px;
+	font-family:Cochin;
+	border-radius: 50%;
+	display: grid;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+
+}
+
+.school {
+	position: relative;
+	background-color: #e6f5ff;
+	width: 50vw;
+	height: 10vh;
+	margin: auto;
+	padding: 20px;
+	height: auto;
+	
+	display: grid;
+	box-sizing: border-box;
+	border-radius: 15%;
+	margin-top: 20px;
+	
+	
+}
+
+footer {
+	position: fixed;
+	text-align:left;
+  	margin-top: 100px;
+}
 
 
 @media  (max-width: 700px) {
@@ -78,3 +135,4 @@ h1, h2, h3, h4, p, br {
 	  flex-direction: column;
 	}
 }
+
