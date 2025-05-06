@@ -9,7 +9,7 @@ body{
 	
 }
 
-h1, h2, h3, h4, p, br, li {
+h1, h2, h3, h4, p, br, li, .project {
 	color: rgb(20, 145, 255);
 }
 
