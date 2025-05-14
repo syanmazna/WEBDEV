@@ -1,12 +1,17 @@
 body{
-	/*background-color: rgb(132, 196, 255);*/
 	background-image: linear-gradient(to top, #ffffff, #efeffe, #dbe0fe, #c2d2ff, #a3c5ff, #91bcff, #7eb2ff, #69a9ff, #709eff, #8290ff, #9a7fff, #b569ff);
 	display: grid;
 	grid-template-columns:repeat(2, 600px);
 	grid-template-rows: repeat(3, 600px);
 	margin-top: 10%;
 	margin-right: 0%;
+	cursor: url('image/cursor.png'), auto;
 	
+}
+
+.cursor {
+	height: 20px;
+	width: 20px;
 }
 
 h1, h2, h3, h4, p, br, li, .project {
